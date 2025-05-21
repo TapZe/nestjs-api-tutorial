@@ -1,0 +1,16 @@
+meta {
+  name: Register Auth
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{host}}/auth/register
+  body: formUrlEncoded
+  auth: inherit
+}
+
+body:form-urlencoded {
+  email: nabil@gmail.com
+  password: Nabil123
+}
